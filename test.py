@@ -1,0 +1,26 @@
+import os
+from random import randint
+tc = "7"
+tc = tc + "\n"
+for _ in range(7):
+ #generate N C K
+ N = randint(1, 7)
+ C = randint(10, 1000) 
+ K = randint(1, 7)
+ tc = tc + str(N) + " " + str(C) + " " + str(K)
+ tc = tc + "\n"
+ for i in range(N):
+
+
+ #generate S[i] M[i]
+    S = randint(1, C)
+ M = randint(1, 1000)
+ tc = tc + str(S) + " " + str(M)
+ tc = tc + "\n"
+dir_path = os.path.dirname(os.path.realpath(tc))
+file_path = os.path.join(dir_path, "tc.txt")
+f = open(file_path, "w")
+f.write(tc)
+f.close()
+f = open(file_path, "r")
+print(f.read()) 
