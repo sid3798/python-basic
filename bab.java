@@ -1,4 +1,4 @@
-public class babu{
+public class bab{
     public static void main(String[] args) {
         int seconds[]={66,57,54,53,64,50,59};
         int n=seconds.length;
